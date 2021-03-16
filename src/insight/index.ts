@@ -1,4 +1,4 @@
-export * from './BtcApiInsight';
+export * from './BtcApiInsightClient';
 export * from './IBtcBlockInsight';
 export * from './IBtcInputInsight';
 export * from './IBtcOutputInsight';
