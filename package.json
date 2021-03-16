@@ -1,0 +1,30 @@
+{
+    "name": "@ts-core/btc",
+    "version": "1.0.0",
+    "description": "Classes and utils for Btc",
+    "main": "index.js",
+    "scripts": {},
+    "author": {
+        "name": "Renat Gubaev",
+        "email": "renat.gubaev@gmail.com"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@ts-core/common": "^1.0.168",
+        "bitcoind-rpc": "0.8.1"
+    },
+    "devDependencies": {
+        "gulp-npm-publisher": "1.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ManhattanDoctor/ts-core-btc.git"
+    },
+    "keywords": [
+        "typescript"
+    ],
+    "bugs": {
+        "url": "https://github.com/ManhattanDoctor/ts-core-btc/issues"
+    },
+    "homepage": "https://github.com/ManhattanDoctor/ts-core-btc#readme"
+}
