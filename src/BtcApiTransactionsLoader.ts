@@ -1,7 +1,7 @@
 import { SequenceExecutor } from '@ts-core/common/executor';
 import { ILogger } from '@ts-core/common/logger';
 import { PromiseReflector } from '@ts-core/common/promise';
-import { BtcApi } from './BtcApi';
+import { BtcApiClient } from './BtcApiClient';
 import { IBtcTransaction } from './IBtcTransaction';
 
 export class BtcApiTransactionsLoader extends SequenceExecutor<Array<string>, Array<IBtcTransaction | Error>> {
@@ -11,7 +11,7 @@ export class BtcApiTransactionsLoader extends SequenceExecutor<Array<string>, Ar
     //
     // --------------------------------------------------------------------------
 
-    constructor(private api: BtcApi, protected logger: ILogger) {
+    constructor(private api: BtcApiClient, protected logger: ILogger) {
         super();
     }
 

@@ -2,7 +2,7 @@ import * as _ from 'lodash';
 import { SequenceExecutor } from '@ts-core/common/executor';
 import { PromiseReflector } from '@ts-core/common/promise';
 import { ObjectUtil } from '@ts-core/common/util';
-import { BtcApi } from './BtcApi';
+import { BtcApiClient } from './BtcApiClient';
 import { IBtcInput } from './IBtcInput';
 import { ILogger } from '@ts-core/common/logger';
 
@@ -13,11 +13,11 @@ export class BtcApiInputsTransactionLoader extends SequenceExecutor<Array<IBtcIn
     //
     // --------------------------------------------------------------------------
 
-    constructor(private api: BtcApi, logger?: ILogger, timeout?: number) {
+    constructor(private api: BtcApiClient, logger?: ILogger, timeout?: number) {
         super(logger, timeout);
     }
 
-    
+
     // --------------------------------------------------------------------------
     //
     //  Protected Methods

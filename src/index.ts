@@ -1,4 +1,4 @@
-export * from './BtcApi';
+export * from './BtcApiClient';
 export * from './BtcApiInputsTransactionLoader';
 export * from './BtcApiTransactionsLoader';
 export * from './IBtcBlock';
