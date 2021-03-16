@@ -1,6 +1,6 @@
 {
     "name": "@ts-core/btc",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Classes and utils for Btc",
     "main": "index.js",
     "scripts": {},
