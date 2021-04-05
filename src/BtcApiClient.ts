@@ -69,7 +69,7 @@ export class BtcApiClient extends LoggerWrapper {
                 if (!_.isEmpty(item.addresses) && item.addresses.length === 1) {
                     item.address = item.addresses[0];
                 } else if (!_.isNil(logger)) {
-                    logger.warn(`Transaction ${item.type} ouput has incorrect addresses (empty or more than one)`);
+                    logger.warn(`Transaction "${item.value}" output has incorrect amount of addresses "${item.addresses.length}"`);
                 }
                 break;
             case BtcOutputType.NULL_DATA:
@@ -79,8 +79,9 @@ export class BtcApiClient extends LoggerWrapper {
             case BtcOutputType.WITNESS_V0_SCRIPT_HASH:
                 break;
             default:
-                console.log(item.type);
-                console.log(item);
+                if (!_.isNil(logger)) {
+                    logger.warn(`Unknown output type "${item.type}"`);
+                }
         }
     }
 
