@@ -66,10 +66,11 @@ export class BtcApiClient extends LoggerWrapper {
             case BtcOutputType.PUB_KEY:
             case BtcOutputType.SCRIPT_HASH: // TODO: need to check!
             case BtcOutputType.PUB_KEY_HASH:
-                if (!_.isEmpty(item.addresses) && item.addresses.length === 1) {
+                let items = item.addresses;
+                if (!_.isEmpty(items) && items.length === 1) {
                     item.address = item.addresses[0];
                 } else if (!_.isNil(logger)) {
-                    logger.warn(`Transaction "${item.value}" output has incorrect amount of addresses "${item.addresses.length}"`);
+                    logger.warn(`Transaction "${item.value}" output has incorrect amount of addresses "${!_.isNil(items)? items.length : 'nil'}"`);
                 }
                 break;
             case BtcOutputType.NULL_DATA:
