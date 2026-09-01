@@ -1,7 +1,7 @@
 {
     "name": "@ts-core/btc",
     "version": "1.0.6",
-    "description": "Classes and utils for Btc",
+    "description": "TypeScript library for interacting with the Bitcoin blockchain over RPC: blocks, transactions and input/output management",
     "main": "index.js",
     "scripts": {},
     "author": {
@@ -21,7 +21,15 @@
         "url": "git+https://github.com/ManhattanDoctor/ts-core-btc.git"
     },
     "keywords": [
-        "typescript"
+        "typescript",
+        "bitcoin",
+        "btc",
+        "blockchain",
+        "rpc",
+        "transaction",
+        "block",
+        "utxo",
+        "crypto"
     ],
     "bugs": {
         "url": "https://github.com/ManhattanDoctor/ts-core-btc/issues"
